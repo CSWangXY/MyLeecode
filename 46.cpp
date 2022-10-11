@@ -29,7 +29,7 @@ public:
                 path.push_back(nums[i]);
                 used[i] = true;
                 dfs(nums , used, path, depth+1);
-                used[i] = false;
+                used[i] = false;//回溯，撤销操作
                 path.pop_back();
 
             }
