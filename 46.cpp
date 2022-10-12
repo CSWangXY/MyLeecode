@@ -27,7 +27,7 @@ public:
             if(used[i] == false)
             {
                 path.push_back(nums[i]);
-                used[i] = true;
+                used[i] = true;//选择，添加操作
                 dfs(nums , used, path, depth+1);
                 used[i] = false;//回溯，撤销操作
                 path.pop_back();
