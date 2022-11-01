@@ -1,18 +1,14 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
+
+int cal()
+{
+    static int c = 0;
+    return 1;
+}
 
 int main()
 {
-    bool HashTable[3000]={false};
-    int x;
-    while(cin>>x)
-    {
-        if(HashTable[x]==true)
-        cout<<"youwenti";
-        else
-        {
-            HashTable[x]=true;
-        }
-
-    }
+    for (int i = 0; i < 10; i++)
+        cout << cal();
 }
